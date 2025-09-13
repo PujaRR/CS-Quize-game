@@ -1,0 +1,45 @@
+const wrapper=document.querySelector('.wrapper');
+const wrapper1=document.querySelector('.wrapper1');
+const loginLink=document.querySelector('.login-link');
+const registerLink=document.querySelector('.register-link');
+
+const btnPopup=document.querySelector('.btnLogin-popup');
+const btnPopup1=document.querySelector('.btnLogin-popup1');
+const iconClose=document.querySelector('.icon-close');
+const iconClose1=document.querySelector('.icon-close1');
+
+registerLink.addEventListener('click',()=>
+{
+	wrapper.classList.add('active');
+});
+
+loginLink.addEventListener('click',()=>
+{
+	        wrapper.classList.remove('active');
+});
+
+btnPopup.addEventListener('click',()=>
+{
+	wrapper.classList.add('active-popup');
+});
+
+iconClose.addEventListener('click',()=>
+{
+	wrapper.classList.remove('active-popup');
+});
+btnPopup1.addEventListener('click',()=>
+{
+	wrapper1.classList.add('active-popup');
+});
+
+iconClose1.addEventListener('click',()=>
+{
+	wrapper1.classList.remove('active-popup');
+});
+
+
+
+
+
+
+

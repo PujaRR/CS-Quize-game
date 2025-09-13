@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.quiz_box 
+{
+    /* background-color: red; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 550px;
+    background: #fff;
+    border: 4px solid darkblue;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.quiz_box header{
+    position: relative;
+    z-index: 2;
+    height: 70px;
+    padding: 0 30px;
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
+}
+
+.quiz_box header .title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.quiz_box header .timer{
+    color: #004085;
+    background: #cce5ff;
+    border: 1px solid #b8daff;
+    height: 45px;
+    padding: 0 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+}
+.quiz_box header .timer .time_left_txt{
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.quiz_box header .timer .timer_sec{
+    font-size: 18px;
+    font-weight: 500;
+    height: 30px;
+    width: 45px;
+    color: #fff;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    background: #343a40;
+    border: 1px solid #343a40;
+}
+
+section{
+    padding: 25px 30px 20px 30px;
+    background: #fff;
+}
+
+section .que_text{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+section .option_list{
+    padding: 20px 0px;
+    display: block;   
+}
+
+section .option_list .option{
+    background: aliceblue;
+    border: 1px solid #84c5fe;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 17px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content:left;
+}
+
+section .option_list .option:last-child{
+    margin-bottom: 0px;
+}
+
+section .option_list .option:hover{
+    color: #004085;
+    background: #cce5ff;
+    border: 1px solid #b8daff;
+}
+
+footer{
+    height: 60px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid lightgrey;
+}
+
+footer .total_que span{
+    display: flex;
+}
+
+footer .total_que span p{
+    font-weight: 500;
+    padding: 0 5px;
+}
+footer .total_que span p:first-child{
+    padding-left: 0px;
+}
+
+footer button{
+    height: 40px;
+    padding: 0 13px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    background: #007bff;
+    border: 1px solid #007bff;
+    line-height: 10px;
+}
+
+footer button:hover{
+    background: #0263ca;
+}
+
