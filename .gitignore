@@ -1,0 +1,55 @@
+# IDE files
+.eclipse
+.idea
+*.iml
+.vscode
+.project
+.classpath
+.settings/
+.metadata/
+
+# Build outputs
+*.class
+*.jar
+*.war
+build/
+target/
+dist/
+webapps/
+work/
+*.tmp
+
+# Logs
+*.log
+logs/
+
+# Database (ignore runtime data, keep schemas)
+static/Database/*.csv
+static/Database/*.xlsx
+!static/Database/*.sql
+
+# OS generated files
+.DS_Store
+Thumbs.db
+.DS_Store?
+
+# Temporary files
+*~
+*.swp
+*.swo
+# Temporary IDE files
+*.tmp
+*.bak
+*.swp
+*~.nib
+
+# Maven Wrapper (if using Maven)
+.mvn/wrapper/maven-wrapper.jar
+
+# Sensitive files (add if you have any)
+src/main/resources/application.properties
+src/main/resources/application.yml
+# Or any .properties files with passwords/secrets
+
+# Compiled JSP (if any)
+*.jspf
